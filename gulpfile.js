@@ -90,5 +90,5 @@ gulp.task('watch', () => {
   gulp.watch('./dist/styles/*').on('change', browserSync.reload)
 })
 
-gulp.task('default', ['watch', 'serve'])
-// gulp.task('default', ['styles', 'assets', 'images', 'icons'])
+// gulp.task('default', ['watch', 'serve'])
+gulp.task('default', ['styles', 'assets', 'images', 'icons'])

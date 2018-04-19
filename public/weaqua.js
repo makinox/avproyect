@@ -40,30 +40,30 @@ self.addEventListener('activate', e => {
   )
 })
 
-self.addEventListener('fetch', e => {
-  // console.log('Evento: SW Recuperando')
+// self.addEventListener('fetch', e => {
+//   // console.log('Evento: SW Recuperando')
 
-  e.respondWith( 
-  //   async () => {
-  //   const cachedResponse = await caches.match(e.request)
+//   e.respondWith( 
+//   //   async () => {
+//   //   const cachedResponse = await caches.match(e.request)
 
-  //   if (cachedResponse) return cachedResponse
+//   //   if (cachedResponse) return cachedResponse
 
-  //   return fetch(e.request)
-  // }
-    // Miramos si la petición coincide con algún elemento del cache
-    caches.match(e.request)
-      .then(res => {
-        // console.log('Recuperando cache')
-        if (res) {
-          // Si coincide lo retornamos del cache
-          return res
-        }
-        // Sino, lo solicitamos a la red
-        return fetch(e.request)
-      })
-  )
-})
+//   //   return fetch(e.request)
+//   // }
+//     // Miramos si la petición coincide con algún elemento del cache
+//     caches.match(e.request)
+//       .then(res => {
+//         // console.log('Recuperando cache')
+//         if (res) {
+//           // Si coincide lo retornamos del cache
+//           return res
+//         }
+//         // Sino, lo solicitamos a la red
+//         return fetch(e.request)
+//       })
+//   )
+// })
 
 // self.addEventListener('push', e => {
 //   // console.log('Evento: Push')
