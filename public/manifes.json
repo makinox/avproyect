@@ -1,7 +1,8 @@
 {
     "name": "WeAqua",
     "short_name": "WeAqua",
-    "descripton": "La aplicacion del agua",
+    "descripton": "Agua para el futuro",
+    "start_url": "./index.html?utm=homescreen",
     "lang": "es",
     "dir": "rtl",
     "icons": [
@@ -16,8 +17,13 @@
             "type": "image/png"
         }
     ],
+    "author": {
+    "name": "Jesus Bossa",
+    "website": "https://makinox.github.io/PortafolioPersonal/",
+    "github": "https://github.com/makinox",
+    "source-repo": "https://github.com/makinox/avproyect"
+  },
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "start_url": "./?utm_source=web_app_manifest",
     "display": "standalone"
 }
