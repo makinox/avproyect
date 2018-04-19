@@ -47,7 +47,7 @@ gulp.task('icons', () => {
   return gulp
     .src('dist/icons/**/*')
     .pipe(imagemin({progressive: true, interlaced: true}))
-    .pipe(webp())
+    // .pipe(webp())
     .pipe(gulp.dest(dest))
     .pipe(size({title: 'icons'}))
 })
